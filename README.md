@@ -16,7 +16,7 @@ Two employees from the Colorado Board of Elections needed assistance to complete
 
 ## Election Audit Results
 
-<img width="294" alt="Terminal Output" src="https://user-images.githubusercontent.com/90878911/136718060-88661b15-d7e2-44b3-af72-ad02ff93b24f.png">
+<img width="304" alt="Terminal Output" src="https://user-images.githubusercontent.com/90878911/136719084-b3e23556-7c11-4402-bb7f-8a9561a961d1.png">
 
 ## Election Audit Summary
 
