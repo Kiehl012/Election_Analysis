@@ -7,6 +7,7 @@ import os
 
 # Add a variable to load a file from a path.
 file_to_load = os.path.join("Resources", "election_results.csv")
+
 # Add a variable to save the file to a path.
 file_to_save = os.path.join("analysis", "election_analysis.txt")
 
@@ -95,6 +96,7 @@ with open(file_to_save, "w") as txt_file:
 
     # 6a: Write a for loop to get the county from the county dictionary.
     for county_name in county_votes:
+
         # 6b: Retrieve the county vote count.
         votes_county = county_votes.get(county_name)
         
@@ -104,8 +106,10 @@ with open(file_to_save, "w") as txt_file:
         # 6d: Print the county results to the terminal.
         county_results = (f"{county_name}: {votes_county:,} ({county_percentage:.1f}%)\n")
         print(county_results)
+
         # 6e: Save the county votes to a text file.
         txt_file.write(county_results)
+
         # 6f: Write an if statement to determine the winning county and get its vote count.
         if (votes_county > winning_vote_count) and (county_percentage > winning_county_percentage):
             winning_vote_count = votes_county
@@ -116,7 +120,7 @@ with open(file_to_save, "w") as txt_file:
     county_winner = (
         f"-------------------------\n"
         f"Largest County Turnout: {winning_county}\n"
-        f"-------------------------\n"
+        f"-------------------------\n\n"
         f"Candidate Votes:\n")
     print(county_winner)
 
@@ -156,5 +160,3 @@ with open(file_to_save, "w") as txt_file:
 
     # Save the winning candidate's name to the text file
     txt_file.write(winning_candidate_summary)
-
-    county_options
